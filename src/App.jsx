@@ -17,7 +17,9 @@ function App() {
   return (
     <main>
       <section className="container">
-        <h3>{users.length} birthdays today</h3>
+        <h3>
+          {users.length} birthday{users.length > 1 && "s"} today
+        </h3>
         <section className="usersList">{newUser}</section>
         <button onClick={() => setUsers([])} className="btn">
           Clear All
